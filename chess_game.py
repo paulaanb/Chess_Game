@@ -17,7 +17,7 @@ def chess_game(fichier_name):
     movement = 0
     # Creamos un bucle para realizar movimientos en la partida hasta que el usario decida terminar.
     while True:
-        continuar = input('¿Desea realizar algún otro movimiento? (Si/ No):')
+        continuar = input('¿Desea realizar algún movimiento? (Si/ No):')
         if continuar != 'Si':
             break
         else:
