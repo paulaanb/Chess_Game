@@ -39,3 +39,8 @@ def chess_game(fichier_name):
 chess_game('partida1.txt')
 
 #Una vez generado el fichero con los tableros sucesivos de una partida de ajedrez, el programa preguntará por un movimiento y mostrará por pantalla el tablero correspondiente ese movimiento.
+def board(fichier_name, n):
+    # Ponemos el archivo en modo lectura y dividimos la cadena por el caracter de cambio de línea.
+    f = open(fichier_name, 'r')
+    boards = f.read().split('\n')
+    
