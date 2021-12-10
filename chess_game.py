@@ -4,4 +4,7 @@
 #Además, una vez generado el fichero con los tableros sucesivos de una partida de ajedrez, el programa preguntará por un movimiento y mostrará por pantalla el tablero correspondiente ese movimiento.
 def chess_game(fichier_name):
     initial_board = '♜\t♞\t♝\t♛\t♚\t♝\t♞\t♜\n♟\t♟\t♟\t♟\t♟\t♟\t♟\t♟\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n♙\t♙\t♙\t♙\t♙\t♙\t♙\t♙\n♖\t♘\t♗\t♕\t♔\t♗\t♘\t♖'
-    
+    board = []
+    for i in initial_board.split('\n'):
+        # Dividimos al tablero la lista que resulta de dividir la subcadena i por el caracter de tabulación.
+        board.append(i.split('\t'))
