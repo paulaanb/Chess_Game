@@ -48,4 +48,4 @@ def board(fichier_name, n):
         print(i)
     return
 
-
+board('partida1.txt', 2)
