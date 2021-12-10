@@ -6,6 +6,8 @@ La primera tarea consiste en escribir un programa que guarde en un fichero la se
 
 El diagrama de flujo que acompaña al código se muestra a continuación:
 
+[Figma: https://www.figma.com/file/LSZqv4b73Y1k1EMNSmkxns/Chess_Game?node-id=0%3A1]
+
 ![Uploading Captura de pantalla 2021-12-10 a las 19.34.48.png…]()
 
 El tablero para esta tarea es:
@@ -72,6 +74,6 @@ def board(fichier_name, n):
         print(i)
     return
 
-board('partida1.txt', 2)´´´
+board('partida1.txt', 2)
 
 
