@@ -35,3 +35,5 @@ def chess_game(fichier_name):
             for i in board:
                 f.write('\t'.join(i) + '\n')
             f.close()
+    return
+chess_game('partida1.txt')
