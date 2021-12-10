@@ -37,3 +37,5 @@ def chess_game(fichier_name):
             f.close()
     return
 chess_game('partida1.txt')
+
+#Una vez generado el fichero con los tableros sucesivos de una partida de ajedrez, el programa preguntará por un movimiento y mostrará por pantalla el tablero correspondiente ese movimiento.
