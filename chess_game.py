@@ -8,3 +8,9 @@ def chess_game(fichier_name):
     for i in initial_board.split('\n'):
         # Dividimos al tablero la lista que resulta de dividir la subcadena i por el caracter de tabulación.
         board.append(i.split('\t'))
+    # Ponemos el fichero en modo lectura y creamos un bucle para recorrer las filas del tablero
+    f = open(fichier_name, 'w')
+    for i in board:
+        f.write('\t'.join(i) + '\n')
+    f.close()
+    
