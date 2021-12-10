@@ -43,4 +43,9 @@ def board(fichier_name, n):
     # Ponemos el archivo en modo lectura y dividimos la cadena por el caracter de cambio de línea.
     f = open(fichier_name, 'r')
     boards = f.read().split('\n')
-    
+    # Creamos un bucle para imprimir las lineas correspondientes al tablero. Cada tablero empieza siempre en una línea múltiplo de 9.
+    for i in boards[n*9:n*9+8]:
+        print(i)
+    return
+
+
